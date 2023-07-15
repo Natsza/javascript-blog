@@ -1,6 +1,7 @@
 "use strict";
 
 function titleClickHandler(event) {
+	event.preventDefault();
 	const clickedElement = this;
 	console.log("Link was clicked!");
 
@@ -10,7 +11,6 @@ function titleClickHandler(event) {
 	for (let activeLink of activeLinks) {
 		activeLink.classList.remove("active");
 	}
-
 	/* add class 'active' to the clicked link */
 	clickedElement.classList.add("active");
 	console.log("clickedElement:", clickedElement);
