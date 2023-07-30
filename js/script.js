@@ -54,7 +54,6 @@ const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
   optArticleTagsSelector = '.post-tags .list',
-  optTagsListSelector = '.tags .list',
   optCloudClassCount = '5',
   optCloudClassPrefix = 'tag-size-',
   optAuthorsListSelector = '.authors.list',
@@ -118,7 +117,6 @@ function calculateTagsParams(tags) {
   }
 
   return params;
-  console.log('params:' + params);
 }
 
 function calculateTagClass(count, params) {
